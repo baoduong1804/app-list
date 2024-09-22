@@ -2,6 +2,8 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeScreen from "../review/home";
 import AboutScreen from "../review/about";
 import LoginScreen from "../review/login";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeLayout from "./stack.navigation";
 
 const AppNavigation = () => {
   const Drawer = createDrawerNavigator();
@@ -10,7 +12,7 @@ const AppNavigation = () => {
         <Drawer.Navigator >
         <Drawer.Screen
           name="Home"
-          component={HomeScreen}
+          component={HomeLayout}
           options={{title:"Home"}}
         />
         <Drawer.Screen
