@@ -30,9 +30,10 @@ const DetailScreen = () => {
             <Text style={styles.review}>Id: {route.params.id}</Text>
             <Text style={styles.review}>Star: {route.params.star}</Text>
             <View >
+                <Text style={{height:100}}>url: {route.params.image}</Text>
                 <Image
                 style={styles.image}
-                    source={{uri:route.params.urlImage}}
+                    source={{uri:route.params.image}}
                 />
             </View>
             <View style={styles.button}>

@@ -2,7 +2,7 @@
   "name": "learn-react-native-hoidanit",
   "author": {
     "name": "Bao duong",
-    "url": ""
+    "url": "baoduong"
   },
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
@@ -22,6 +22,8 @@
     "react": "18.2.0",
     "react-native": "0.74.3",
     "react-native-gesture-handler": "2.16.1",
+    "react-native-image-picker": "^7.1.2",
+    "react-native-permissions": "^4.1.5",
     "react-native-reanimated": "3.10.1"
   },
   "devDependencies": {

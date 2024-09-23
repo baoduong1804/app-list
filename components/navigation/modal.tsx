@@ -77,6 +77,16 @@ const ModalText = (prop: Iprops) => {
       alert("Enter star: 1 to 5")
     }
   }
+
+  const handleImage = (url:string) => {
+    if(url.length >= 4500){
+      alert("The image URL is too long. Could you choose a shorter one?")
+      setImage("")
+    } else{
+      setImage(url)
+    }
+  }
+
   return (
     <Modal
         animationType="slide"
@@ -120,7 +130,7 @@ const ModalText = (prop: Iprops) => {
                 <Text style={{fontSize:20,marginBottom:5}}> URL Image</Text>
                 <TextInput 
                 style={styles.input}
-                  onChangeText={(v)=>setImage(v)}
+                  onChangeText={handleImage}
                 />
                </View>
                
