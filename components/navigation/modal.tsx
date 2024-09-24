@@ -130,6 +130,7 @@ const ModalText = (prop: Iprops) => {
                 <Text style={{fontSize:20,marginBottom:5}}> URL Image</Text>
                 <TextInput 
                 style={styles.input}
+                value={image}
                   onChangeText={handleImage}
                 />
                </View>

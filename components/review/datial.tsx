@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
         fontSize:25
     },
     image:{
-        height:100,
-        width:100,
+        height:300,
+        width:300,
 
     },
     button :{
@@ -30,7 +30,7 @@ const DetailScreen = () => {
             <Text style={styles.review}>Id: {route.params.id}</Text>
             <Text style={styles.review}>Star: {route.params.star}</Text>
             <View >
-                <Text style={{height:100}}>url: {route.params.image}</Text>
+                <Text style={{fontSize:25}}>Image:</Text>
                 <Image
                 style={styles.image}
                     source={{uri:route.params.image}}
